@@ -1,5 +1,5 @@
 import {
-	AbsoluteFill,
+    Sequence,
 	interpolate,
 	spring,
 	useCurrentFrame,
@@ -64,11 +64,25 @@ export const Overlay: React.FC = () => {
 	}, [scale, outY, rotate]);
 
 	return (
-		<AbsoluteFill>
-			<div style={container}>
-				<div style={title}>Now: Silicon Valley</div>
-				<div style={text}>Next: Games of Thrones</div>
+        <>
+          <Sequence>
+			<div style={container} from={0}>
+				<div style={text}>Now</div>
+				<div style={title}>Silicon Valley</div>
 			</div>
-		</AbsoluteFill>
+          </Sequence>
+          <Sequence from={60}>
+			<div style={container}>
+				<div style={text}>Next</div>
+				<div style={title}>Games of Thrones</div>
+			</div>
+          </Sequence>
+          <Sequence from={120}>
+			<div style={container}>
+				<div style={text}>Later</div>
+				<div style={title}>The Big Bang Theory</div>
+			</div>
+          </Sequence>
+        </>
 	);
 };
