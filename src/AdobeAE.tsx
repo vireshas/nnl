@@ -13,11 +13,13 @@ const style: CSSProperties = {
 };
 
 const Seq1 = () => {
-  animationData.assets[4].layers[1].t.d.k[0].s.t = "Now: The Big Bang Theory"
+  const animiCopy = {...animationData};
+  animiCopy.assets[4].layers[1].t.d.k[0].s.t = "Now: The Big Bang Theory"
+
   return (
     <Sequence from={0}>
       <RemotionLottie
-        animationData={animationData}
+        animationData={animiCopy}
         style={style}
         speed={0.5}
       />
@@ -26,11 +28,13 @@ const Seq1 = () => {
 }
 
 const Seq2 = () => {
-  animationData.assets[4].layers[1].t.d.k[0].s.t = "Next: Silicon Valley"
+  const animiCopy = {...animationData};
+  animiCopy.assets[4].layers[1].t.d.k[0].s.t = "Next: Silicon Valley"
+
   return (
-    <Sequence from={250}>
+    <Sequence from={200}>
       <RemotionLottie
-        animationData={animationData}
+        animationData={animiCopy}
         style={style}
         speed={0.5}
       />
