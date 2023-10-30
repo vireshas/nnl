@@ -46,7 +46,6 @@ export const Overlay: React.FC = () => {
   return (
       <>
           <Seq1 />
-          <Seq2 />
       </>
   );
 };
