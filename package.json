@@ -4,7 +4,7 @@
 	"description": "My Remotion video",
 	"scripts": {
 		"start": "remotion studio",
-		"build": "remotion render --concurrency 1",
+		"build": "remotion render --concurrency 6",
 		"upgrade": "remotion upgrade",
 		"test": "eslint src --ext ts,tsx,js,jsx && tsc"
 	},
@@ -23,8 +23,12 @@
 		"@remotion/cli": "^4.0.0",
 		"@remotion/google-fonts": "^4.0.0",
 		"@remotion/renderer": "^4.0.56",
+		"@remotion/rive": "^4.0.57",
+		"lottie": "^0.0.1",
+		"lottie-web": "^5.12.2",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
-		"remotion": "^4.0.0"
+		"remotion": "^4.0.0",
+		"remotion-animation": "^1.0.5"
 	}
 }

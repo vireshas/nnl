@@ -7,6 +7,7 @@ import {
 } from 'remotion';
 import React, {useMemo} from 'react';
 import {loadFont} from '@remotion/google-fonts/Roboto';
+import {Animation} from  'remotion-animation';
 
 const {fontFamily} = loadFont();
 
